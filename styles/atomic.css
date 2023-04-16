@@ -1,0 +1,29 @@
+body{
+    background: rgba(25, 28, 25, 1);
+}
+
+.banner{
+    background: url("../assets/images/article_images/bomb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::after{
+    content: "ATOMIC WARFARE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: #2825259e;
+    color: white;
+    font-size: 5rem;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+    
+}

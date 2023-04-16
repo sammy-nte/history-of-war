@@ -1,0 +1,240 @@
+* {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100vh;
+}
+
+.left-side {
+  background: url("../assets/images/homepage_images/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+  background: rgba(40, 38, 33, 0.792);
+}
+
+.left-side--bar {
+  height: 90vh;
+  width: 80px;
+  background: rgba(40, 38, 33, 0.868);
+  z-index: 2;
+  margin: 0 0 0 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.quote-container {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: grid;
+  place-content: center;
+  font-weight: 500;
+}
+
+.left-side--text-container {
+  max-width: 430px;
+  z-index: 2;
+  color: white;
+}
+
+.left-side--header {
+  font-size: 6rem;
+  text-align: justify;
+}
+
+.left-side--war-quote-author {
+  text-align: center;
+}
+
+.right-side {
+  background: rgba(239, 235, 216, 1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+}
+
+.top {
+  height: 100px;
+  width: 100px;
+}
+
+.right-side--date-text {
+  margin: 0 2em 0 0;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+
+.right-side--date-text p {
+  font-family: "Bebas Neue", cursive;
+  line-height: 1em;
+}
+
+.right-side--date-text p:first-child {
+  font-size: 2.5rem;
+}
+
+.right-side--date-text p:nth-child(2) {
+  font-size: 9rem;
+  -webkit-text-stroke: 1px gray;
+  color: transparent;
+}
+
+.right-side--date-text p:nth-child(3) {
+  font-size: 9rem;
+}
+
+.bottom {
+  width: 500px;
+  height: 150px;
+  background: rgb(193, 190, 175);
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.image-containers {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  height: 130px;
+  transform: translateY(-120px);
+  -webkit-transform: translateY(-120px);
+  -moz-transform: translateY(-120px);
+  -ms-transform: translateY(-120px);
+  -o-transform: translateY(-120px);
+  align-self: end;
+}
+
+.img1,
+.img2 {
+  width: 190px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 2px;
+  overflow: visible;
+}
+
+.text>h3 {
+  padding: 1em 1em 0.3em 1em;
+}
+
+.text>p {
+  padding: 0 1em;
+  font-weight: 300;
+}
+
+#explore-btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 200px;
+  height: 60px;
+  border: none;
+  background: rgba(199, 195, 178, 1);
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 450ms ease;
+  -webkit-transition: all 450ms ease;
+  -moz-transition: all 450ms ease;
+  -ms-transition: all 450ms ease;
+  -o-transition: all 450ms ease;
+  cursor: pointer;
+}
+
+#explore-btn:hover {
+  box-shadow: 7px 7px 2px 2px rgba(184, 184, 184, 0.648);
+  color: white;
+  background: rgba(40, 38, 33, 0.868);
+}
+
+
+@media screen and (max-width: 800px) {
+  * {
+    overflow-y: auto;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .right-side{
+    display: none;
+  }
+
+  .left-side {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .left-side--bar {
+    display: none;
+  }
+
+  .left-side--text-container {
+    width: 80%;
+  }
+
+  .left-side--header {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #explore-btn{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+  }
+
+  #explore-btn:hover{
+    box-shadow: none;
+    
+  }
+}

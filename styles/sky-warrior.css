@@ -1,0 +1,25 @@
+body{
+    background: rgba(25, 28, 25, 1);
+}
+
+.banner{
+    background: url("../assets/images/article_images/plane.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::after{
+    content: "SKY WARRIORS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: #2120209e;
+    color: white;
+    font-size: 5rem;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+}
