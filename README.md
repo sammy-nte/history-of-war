@@ -24,6 +24,4 @@ This project is a school project that covers the history of World War a little. 
 ## Directly access from here 
 - [Open](https://warhistories.netlify.app/index.html)
 
-## Credits
-
-This project was created by [Your Name]. Feel free to use and modify this project as you see fit.
+## Made with ❤️
