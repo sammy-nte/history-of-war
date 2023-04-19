@@ -25,5 +25,19 @@ body{
 }
 
 @media screen and (max-width: 700px) {
-    
+    .banner::after{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .banner::after{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .banner::after{
+        font-size: 1rem;
+    }
 }

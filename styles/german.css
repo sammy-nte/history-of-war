@@ -3,14 +3,14 @@ body{
 }
 
 .banner{
-    background: url("../assets/images/article_images/banner.jpg");
+    background: url("../assets/images/article_images/german.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
 .banner::after{
-    content: "D-DAY";
+    content: "NAZI GERMANY";
     position: absolute;
     top: 0;
     left: 0;

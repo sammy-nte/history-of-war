@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+      />
     <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/content.css" />
   </head>
@@ -20,11 +20,31 @@
           <li class="page-navigation-list-items">
             <a href="./index.html">Home</a>
           </li>
-          <li class="page-navigation-list-items"><a href="#">Gallery</a></li>
+          <li class="page-navigation-list-items">
+            <a href="./content.html">Content</a>
+          </li>
         </ul>
       </nav>
-      <span class="material-symbols-outlined menu-icon"> menu </span>
+      <span class="material-symbols-outlined" id="menu-open"> menu </span>
     </header>
+    <div class="mobile-menu">
+      <div class="left-side-menu">
+
+      </div>
+      <div class="right-side-menu">
+        <span id="menu-close" class="material-symbols-outlined">close</span>
+        <nav class="mobile-page-navigation">
+          <ul class="mobile-page-navigation-list">
+            <li class="mobile-page-navigation-list-items">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="mobile-page-navigation-list-items">
+              <a href="./content.html">Content</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <section class="content">
       <div class="content-box1 flex-column">
         <div class="content-box1--text-container">
@@ -41,8 +61,8 @@
           src="./assets/images/content_page/hitler.jpg"
           alt="Adolf Hitler"
           class="hitler-image content-image"
-        />
-        <a href="#" class="read-link">
+          />
+        <a href="./nazi.html" class="read-link">
           <p>Read</p>
           <p>&rarr;</p>
         </a>
@@ -68,7 +88,7 @@
             src="./assets/images/content_page/fokker-image.jpg"
             alt="war plane image"
             class="plane-img content-image"
-          />
+            />
         </div>
         <a href="./sky-warriors.html" class="read-link">
           <p>Read</p>
@@ -113,5 +133,6 @@
         </a>
       </div>
     </section>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

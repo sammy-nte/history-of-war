@@ -88,11 +88,6 @@ a{
   align-items: end;
 }
 
-.top {
-  height: 100px;
-  width: 100px;
-}
-
 .right-side--date-text {
   margin: 0 2em 0 0;
   transform: rotate(270deg);
@@ -123,7 +118,7 @@ a{
 
 .bottom {
   width: 500px;
-  height: 150px;
+  /* height: 150px; */
   background: rgb(193, 190, 175);
   overflow: visible !important;
   display: flex;
@@ -236,5 +231,49 @@ a{
 
   #explore-btn:hover{
     box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+  .left-side {
+    justify-content: center;
+  }
+
+  .left-side--bar {
+    display: none;
+  }
+
+  .left-side--text-container{
+    width: 80%;
+  }
+
+  .left-side--header{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .right-side--date-text p:first-child {
+    font-size: 2rem;
+  }
+  
+  .right-side--date-text p:nth-child(2) {
+    font-size: 5rem;
+  }
+  
+  .right-side--date-text p:nth-child(3) {
+    font-size: 5rem;
+  }
+
+  .bottom{
+    width: 100%;
+  }
+
+  .image-containers{
+    display: none;
+  }
+
+  #explore-btn{
+    height: 40px;
+    width: 150px;
   }
 }
